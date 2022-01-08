@@ -1,0 +1,32 @@
+class Recursion {
+    public static void main(String[] args) {
+        // Recursion is a method that is called within itself.
+        // Recursion should known when to stop.. it must have base case.
+       // sayHi(5);
+       countBackwards(34);
+        
+    }
+    /*
+    public static void sayHi(int n){
+       // System.out.println("hi");
+       // sayHi();
+       if(n == 0){                                                    // Need a base case
+           System.out.println("We are done");
+       }else{
+           System.out.println("Hi ");
+           sayHi(n-1);
+       }
+       
+    }
+    */
+    public static void countBackwards(int n){
+        if(n ==0){
+            System.out.print("0");
+        }else{
+            System.out.println(n);
+            n--;
+            countBackwards(n);
+        }
+    }
+   
+}
